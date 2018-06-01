@@ -1,0 +1,114 @@
+.container-fluid {
+	margin: 30px;
+	margin-right: 5% !important;
+	margin-left: 4% !important;
+}
+
+.banner {
+	padding-bottom: 30px;
+}
+
+.logo {
+	height: 200px;
+	width: 200px;
+	float: left;
+}
+
+.cryptoSection {
+	background-color: #EBEDEF;
+	box-shadow: 0 0 15px #EBEDEF;
+}
+
+.cryptoList {
+	margin-right: 7%;
+	margin-left: 7%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	text-align: left;
+}
+
+.briefInfo {
+	font-weight: normal;
+	text-align: right;
+}
+
+.nameHead {
+	font-weight: normal;
+}
+
+.sortSection {
+	margin-left: 15%;
+	margin-top: 2%;
+	padding-top: 2%;
+	margin-bottom: 1%;
+}
+
+.sortSection Button {
+	margin-left: 5px;
+} 
+
+.loader {
+	padding-top: 5%;
+	padding-bottom: 10%;
+}
+
+.sortSection label {
+	margin-right: 5px;
+	font-weight: normal;
+	font-size: 13px;
+}
+
+.informationCol {
+	background-color: #EBEDEF;
+	box-shadow: 0 0 15px #EBEDEF;
+	height: 370px;
+}
+
+.listItem {
+	margin-bottom: 5px;
+}
+
+tbody {
+	cursor: pointer;
+}
+
+.tokenSection {
+	margin-top: 15px;
+	padding-top: 5px;
+}
+
+.currencyInfoList {
+	margin-left: 20px;
+	margin-right: 20px;
+	box-shadow: 0 0 20px #EBEDEF;
+}
+
+.close {
+	margin-right: 5px;
+}
+
+.glyphicon-chevron-up {
+	color: #27AE60;
+}
+
+.glyphicon-chevron-down {
+	color: #E74C3C;
+}
+
+.glyphicon-resize-horizontal {
+	color: #F4D03F;
+}
+
+.converterResult {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 25px;
+}
+
+.selectCoin {
+	margin-bottom: 10px;
+}
+
+footer {
+	margin-top: 20px;
+}
