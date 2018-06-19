@@ -4,6 +4,7 @@ import Currency from './Currency'
 import Converter from './Converter'
 import Header from './Header'
 import Search from './Search'
+import Graph from './Graph'
 import {ListGroup, ListGroupItem} from 'react-bootstrap'
 import {Row, Col, Grid} from 'react-bootstrap'
 import {Button, ButtonGroup} from 'react-bootstrap'
@@ -104,14 +105,15 @@ class App extends React.Component {
             <Row className="show-grid">
               <Header launchConverter={this.launchConverter}/>
             </Row>
+
             {this.state.converterOpen ? 
             <Converter retrieveToken={this.retrieveToken} single={this.state.single} closeConverter={this.closeConverter} feed={this.state.feed}/> : null}
-            <Row>
+            <Row className="text-left">
               <Col md={4}>
-                <Search feed={this.state.feed} feedReturn={this.feedReturn}/>
+                <Search feed={this.state.feed} feedReturn={this.feedReturn} loadData={this.loadData} />
               </Col>
               <Col md={8}>
-                <div className="sortSection">
+                <div className="sortSection text-right">
                   <label>Sort By</label>
                   <Button bsStyle="info" bsSize="xsmall" onClick={() => this.sortList('n')}>Name</Button>
                   <Button bsStyle="info" bsSize="xsmall" onClick={() => this.sortList('s')}>Symbol</Button>

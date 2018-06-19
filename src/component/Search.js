@@ -1,12 +1,11 @@
 import React, {Component} from 'react'
-import {FormGroup, FormControl, ControlLabel, Button} from 'react-bootstrap'
+import {Form, FormGroup, FormControl, ControlLabel, Button} from 'react-bootstrap'
 
 class Search extends React.Component {
 	constructor(props){
 		super(props);
 		this.state = {
 			value: '',
-			initialItems: this.props.feed,
 		}
 	}
 
@@ -16,7 +15,7 @@ class Search extends React.Component {
 	}
 
 	filterList = (e) => {
-		var updatedList = this.state.initialItems;
+		var updatedList = this.props.feed;
 
 		updatedList = updatedList.filter((item) => {
 			return item.name.toLowerCase().search(
@@ -29,9 +28,8 @@ class Search extends React.Component {
 
 	render() {
 		return(
-		<form>
+		<Form inline>
 	      <FormGroup>
-	      <ControlLabel></ControlLabel>
 	      <FormControl
 	      	bsSize="small"
 	        type="text"
@@ -40,7 +38,8 @@ class Search extends React.Component {
 	        onChange={(e) => this.filterList(e)}
 	      />
 	      </FormGroup>
-         </form>
+	      <Button className="filterReset" bsSize="sm" onClick={() => this.props.loadData()}>Reset Filter</Button>
+         </Form>
 		);
 	}
 }

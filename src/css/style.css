@@ -2,6 +2,14 @@
 	margin: 30px;
 	margin-right: 5% !important;
 	margin-left: 4% !important;
+	font-family: 'Exo 2', sans-serif;
+	font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container-fluid {
+        font-size: 13px;
+    }
 }
 
 .banner {
@@ -99,6 +107,10 @@ tbody {
 	color: #F4D03F;
 }
 
+.buttonConverter {
+	margin-bottom: 10px;
+}
+
 .converterResult {
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -107,6 +119,10 @@ tbody {
 
 .selectCoin {
 	margin-bottom: 10px;
+}
+
+.filterReset {
+	margin-left: 10px;
 }
 
 footer {
